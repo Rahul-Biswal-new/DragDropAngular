@@ -1,0 +1,9 @@
+<div class="draggable-element" cdkDrag>
+  I am a draggable element 
+</div>
+<div>
+  <h2>Sort Yellow Submarine Lyrics</h2>
+  <ul cdkDropList (cdkDropListDropped)="drop($event)">
+    <li cdkDrag *ngFor="let line of lyrics">{{line}}</li>
+  </ul>
+</div>
